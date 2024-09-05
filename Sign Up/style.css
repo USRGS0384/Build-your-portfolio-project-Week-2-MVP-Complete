@@ -1,80 +1,64 @@
+body {
+  background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
 header {
-  display: flex;
-  justify-content: flex-end; /* Align elements to the right */
-  padding: 10px; /* Adjust padding as needed */
+  text-align: right;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 nav ul li {
-  margin-right: 15px; /* Adjust spacing between items */
+  display: inline-block;
+  margin-right: 10px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #333;   
+
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-image: url("background.jpg"); /* Replace with your desired background image */
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  height: 100vh;
+main {
+  text-align: left;
+  margin: 20px;
 }
 
-.signup-container {
-  background-color: rgba(255, 255,   
-255, 0.8); /* Semi-transparent white background */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0,   
-0, 0.2);
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.input-group {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: left;
+form {
+  width: 300px;
 }
 
 label {
-  width: 150px; /* Adjust label width as needed */
-  text-align: right;
-  margin-right: 10px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 input, select {
-  padding: 5px;
+  width: 100%;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;   
-
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
-#error-message {
-  color: red;
-  text-align: center;
-  margin-top: 10px;   
+button:hover {
+  background-color:   
+#0069d9;
+}
 
+#errorMessage {
+  color: red;
+  margin-top: 10px;
 }
