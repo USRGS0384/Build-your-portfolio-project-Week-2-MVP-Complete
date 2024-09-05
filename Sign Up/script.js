@@ -1,28 +1,15 @@
-const signupForm = document.getElementById('signup-form');
-const errorMessage = document.getElementById('error-message');
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-signupForm.addEventListener('submit',   
- (event) => {
-    event.preventDefault();
+  // Validate form data (e.g., check password match, required fields)
 
-    const username = document.getElementById('username').value;
-    const   
- dob = document.getElementById('dob').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;   
+  if (password.value !== verifyPassword.value) {
+      errorMessage.textContent = "Passwords do not match.";
+      return;
+  }
 
-    const verifyPassword = document.getElementById('verify-password').value;   
+  // Submit form data to server (replace with your backend logic)
 
-    const gender = document.getElementById('gender').value;
-    const location = document.getElementById('location').value;
-
-    // Basic validation (add more robust validation as needed)
-    if (password !== verifyPassword) {
-        errorMessage.textContent = 'Passwords do not match.';
-        return;
-    }
-
-    // Submit form data (replace with your desired submission logic)
-    console.log('Form data:', { username, dob, email, password, gender, location });
-    errorMessage.textContent = ''; // Clear error message if validation passes
+  // For demonstration purposes, display a success message
+  errorMessage.textContent = "Sign up successful!";
 });
