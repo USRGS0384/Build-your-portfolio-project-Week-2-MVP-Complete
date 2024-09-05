@@ -1,7 +1,8 @@
 body {
-  background-color: #f0f0f0; /* Adjust background color as needed */
+  background-image: url('icon1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 header {
   text-align: right;
 }
