@@ -1,18 +1,28 @@
-const form = document.querySelector('form');
-const errorMessages = document.createElement('div');
-errorMessages.classList.add('error-messages');
+const signupForm = document.getElementById('signup-form');
+const errorMessage = document.getElementById('error-message');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+signupForm.addEventListener('submit',   
+ (event) => {
+    event.preventDefault();
 
-  // Validate password matching
-  if (password.value !== verifyPassword.value) {
-    errorMessages.textContent = 'Passwords do not match.';
-    form.appendChild(errorMessages);
-    return;
-  }
+    const username = document.getElementById('username').value;
+    const   
+ dob = document.getElementById('dob').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;   
 
-  // Submit the form
-  // Replace this with your actual form submission logic
-  console.log('Form submitted successfully!');
+    const verifyPassword = document.getElementById('verify-password').value;   
+
+    const gender = document.getElementById('gender').value;
+    const location = document.getElementById('location').value;
+
+    // Basic validation (add more robust validation as needed)
+    if (password !== verifyPassword) {
+        errorMessage.textContent = 'Passwords do not match.';
+        return;
+    }
+
+    // Submit form data (replace with your desired submission logic)
+    console.log('Form data:', { username, dob, email, password, gender, location });
+    errorMessage.textContent = ''; // Clear error message if validation passes
 });
