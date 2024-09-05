@@ -1,7 +1,12 @@
 body {
-  background-image: url('icon1.jpg');
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('C:\Users\user\Desktop/icon1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center   
+  background-size: 100% 100%;
+ center;
 }
 header {
   text-align: right;
